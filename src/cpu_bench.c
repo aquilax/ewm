@@ -74,7 +74,7 @@ void test(struct cpu_t *cpu, uint8_t opcode) {
       runs[run] = duration_ms;
    }
 
-   printf("$%.2X %s %8llu %8llu %8llu -> %8llu\n",
+   printf("$%.2X %s %8lu %8lu %8lu -> %8lu\n",
           opcode, ins->name, runs[0], runs[1], runs[2],
           (runs[0] + runs[1] + runs[2]) / 3);
 }

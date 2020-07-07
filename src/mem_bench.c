@@ -148,7 +148,7 @@ void test(struct cpu_t *cpu, char *name, test_run_t test_run) {
    uint64_t duration_ms = (now.tv_sec * 1000 + (now.tv_nsec / 1000000))
       - (start.tv_sec * 1000 + (start.tv_nsec / 1000000));
 
-   printf("%-32s %8llu\n", name, duration_ms);
+   printf("%-32s %8lu\n", name, duration_ms);
 }
 
 int main(int argc, char **argv) {

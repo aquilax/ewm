@@ -116,6 +116,7 @@ static bool ewm_one_poll_event(struct ewm_one_t *one, SDL_Window *window) {
                      break;
                   case SDLK_TAB:
                      ewm_one_keydown(one, 0x09); // HT
+		     break;
                   case SDLK_DELETE:
                      ewm_one_keydown(one, 0x7f); // DEL
                      break;
